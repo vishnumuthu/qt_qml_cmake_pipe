@@ -19,7 +19,7 @@ void Pipe::setData_1(int value)
     data_1 = value;
     data_1++;
 
-    // emit data_1Changed(data_1); // the NOTIFY property calls the READ function when triggered
+    // emit data_1Changed(); // Block the NOTIFY property calls the READ function when triggered
 }
 
 int Pipe::getdata_2()
@@ -33,5 +33,5 @@ void Pipe::setData_2(int value)
     data_2 = value;
     data_2++;
 
-    emit data_2Changed(data_2); // the NOTIFY property calls the READ function when triggered
+    emit data_2Changed(); // the NOTIFY property calls the READ function when triggered
 }

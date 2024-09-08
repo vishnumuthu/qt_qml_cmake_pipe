@@ -23,8 +23,8 @@ public:
     void setData_2(int value);
 
 signals:
-    void data_1Changed(int value);
-    void data_2Changed(int value);
+    void data_1Changed();
+    void data_2Changed();
 
 private:
     int data_1, data_2;
